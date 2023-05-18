@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  --blue: #81ccf1;
+  --yellow: #efc66a;
+  --pink: #d8a6cb;
+  --dark-pink: #c59ece;
+  --purple: #9996cb;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  background-color: var(--purple);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "card3 card2"
+  "card1 card1"
+  ;
+  width: 100%;
+  height: 100vh;
+}
+
+.item1 {
+  display: grid;
+  place-content: center;
+  font-size: 32px;
+  background: var(--blue);
+  grid-area: card1;
+}
+
+.item2 {
+  display: grid;
+  place-content: center;
+  font-size: 32px;
+  background: var(--dark-pink);
+  grid-area: card2;
+}
+
+.item3 {
+  display: grid;
+  place-content: center;
+  font-size: 32px;
+  background: var(--yellow);
+  grid-area: card3;
+}
